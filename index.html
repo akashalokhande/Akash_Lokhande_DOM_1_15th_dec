@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="./images/download (1).jpg" alt="Image 1" id="image1" />
+      <img src="./images/download.jpg" alt="Image 2" id="image2" />
+      <img src="./images/download (2).jpg" alt="Dice" id="image3" />
+      <img src="./images/download (3).jpg" alt="Image 4" id="image4" />
+    </div>
+
+    <div class="form-overlay">
+      <div class="form-container" id="formContainer">
+        <form id="registrationForm">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Name" id="_name" size="36" />
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Email" id="email" size="36" />
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            placeholder="Username"
+            id="username"
+            size="36"
+          /><br />
+          <button type="button" onclick="register()" style="margin: 10px">
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="result_container">
+      <div class="result" id="result"></div>
+    </div>
+    <div class="congratulations-overlay" id="congratulationsOverlay">
+      <img
+        src="images/congratulation_img.jpg"
+        alt="Congratulations"
+        class="congratulations-image"
+      />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
