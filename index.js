@@ -4,10 +4,10 @@ let diceSum = 0;
 let attempts = 0;
 
 function register() {
-  const name = document.getElementById("_name").value;
+  const _name = document.getElementById("_name").value;
   const username = document.getElementById("username").value;
 
-  if (name && username) {
+  if (_name && username) {
     registered = true;
     document.getElementById("formContainer").style.display = "none";
   } else {
@@ -23,10 +23,11 @@ document.getElementById("image1").addEventListener("click", () => {
 
 document.getElementById("image2").addEventListener("click", () => {
   if (registered) {
-    const nameAndUsername = (document.getElementById(
+    document.getElementById(
       "result"
-    ).innerText = `name : ${_name.value}\nusername:${username.value}`);
-    document.getElementById("result").innerText = nameAndUsername;
+    ).innerText = `name :${_name.value} \nusername:${username.value}`;
+
+    document.getElementById("result").style.display = "block";
   }
 });
 
